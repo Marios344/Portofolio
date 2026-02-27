@@ -1,0 +1,22 @@
+<section>
+    <nav>
+        <div class="main_logo_container">
+            <img src="./../../../assets/img/main_logo.png" alt="main_logo">
+        </div>
+        <div class="button_container">
+            <div class="button_language_select">
+                <button [class.active]="currentLanguage === 'en'" (click)="changeLanguage('en')">EN</button>
+                <button [class.active]="currentLanguage === 'de'" (click)="changeLanguage('de')">DE</button>
+            </div>
+            <div>
+                <button class="burger" [class.active]="isOpen" [class.clicked]="hasClicked" (click)="useMenu()" aria-label="Toggle menu">
+                    <svg viewBox="0 0 100 100">
+                        <line class="line top" x1="10" y1="25" x2="90" y2="25" />
+                        <line class="line middle" x1="10" y1="55" x2="90" y2="55" />
+                        <line class="line bottom" x1="10" y1="85" x2="90" y2="85" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+</section>

@@ -1,0 +1,8 @@
+@use "../../shared/mixins/mixins";
+
+section {
+  @include mixins.dflex(center, center, 0);
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
