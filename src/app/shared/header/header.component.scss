@@ -7,6 +7,7 @@ section {
   top: 0;
   left: 0;
   background-color: #fffcf3;
+  z-index: 100;
 
   > nav {
     @include mixins.dflex(space-between, center, 0);
@@ -92,29 +93,29 @@ section {
 
 .burger.clicked.active {
   .top {
-    animation: topLineOpen 0.4s forwards ease-out;
+    animation: topLineOpen 0.25s forwards ease-out;
   }
 
   .middle {
-    animation: middleLineOpen 0.4s forwards ease-out;
+    animation: middleLineOpen 0.25s forwards ease-out;
   }
 
   .bottom {
-    animation: bottomLineOpen 0.4s forwards ease-out;
+    animation: bottomLineOpen 0.25s forwards ease-out;
   }
 }
 
 .burger.clicked:not(.active) {
   .top {
-    animation: topLineClose 0.4s forwards ease-out;
+    animation: topLineClose 0.25s forwards ease-out;
   }
 
   .middle {
-    animation: middleLineClose 0.4s forwards ease-out;
+    animation: middleLineClose 0.25s forwards ease-out;
   }
 
   .bottom {
-    animation: bottomLineClose 0.4s forwards ease-out;
+    animation: bottomLineClose 0.25s forwards ease-out;
   }
 }
 

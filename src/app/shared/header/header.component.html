@@ -9,7 +9,8 @@
                 <button [class.active]="currentLanguage === 'de'" (click)="changeLanguage('de')">DE</button>
             </div>
             <div>
-                <button class="burger" [class.active]="isOpen" [class.clicked]="hasClicked" (click)="useMenu()" aria-label="Toggle menu">
+                <button class="burger" [class.active]="isOpen" [class.clicked]="hasClicked" (click)="useMenu()"
+                    aria-label="Toggle menu">
                     <svg viewBox="0 0 100 100">
                         <line class="line top" x1="10" y1="25" x2="90" y2="25" />
                         <line class="line middle" x1="10" y1="55" x2="90" y2="55" />
