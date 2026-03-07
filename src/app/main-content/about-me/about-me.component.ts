@@ -9,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AboutMeComponent {
 
+  arrowMoved = false;
+
+  moveArrow() {
+    this.arrowMoved = true;
+  }
+
 }

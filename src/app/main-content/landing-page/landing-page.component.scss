@@ -18,6 +18,10 @@ section {
       font-size: 128px;
       line-height: 100%;
       letter-spacing: -2.5%;
+
+      &:hover {
+        cursor: default;
+      }
     }
   }
 
@@ -39,6 +43,10 @@ section {
       line-height: 100%;
       letter-spacing: -2.5%;
       color: #00bc8f;
+
+      &:hover {
+        cursor: default;
+      }
     }
   }
 }
@@ -68,8 +76,8 @@ section {
     height: 100%;
     position: relative;
 
-    >svg{
-      >path{
+    > svg {
+      > path {
         animation: scrollDownArrow 1.5s infinite ease-in-out;
       }
     }

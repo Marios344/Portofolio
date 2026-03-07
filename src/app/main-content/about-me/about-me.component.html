@@ -25,6 +25,15 @@
                 </button>
             </div>
         </div>
-        <div>dawdawd</div>
+        <div class="portrait_container">
+            <img src="./../../../assets/img/main_portrait.jpeg" alt="developer_portrait">
+        </div>
+    </div>
+    <div class="pointing_arrow_container" (mouseenter)="moveArrow()" [class.moved]="arrowMoved">
+        <svg width="235" height="235" viewBox="0 0 235 235" fill="none">
+            <path d="M41.3149 110.893V193.52H123.942" stroke="black" stroke-width="4" />
+            <path d="M193.521 41.3135L41.3135 193.521" stroke="black" stroke-width="4" />
+        </svg>
+
     </div>
 </section>
